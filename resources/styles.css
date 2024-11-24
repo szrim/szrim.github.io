@@ -75,8 +75,8 @@ nav span{
 }
 
 .picture{
-  height: 300px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
 }
 
 .picture img{
@@ -89,7 +89,11 @@ nav span{
 main{
   display: flex;
   margin: 10%;
-  justify-content: space-between;
+  max-height: 300px;
+}
+
+.about p{
+  margin-left: 40px;
 }
 
 .about a{
