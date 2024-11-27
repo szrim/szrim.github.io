@@ -6,6 +6,13 @@ body{
   overflow-x: hidden;
 }
 
+nav h1 {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-style: italic;
+} 
+
+
 h1, h2, h3{
   font-family: 'Poppins', sans-serif;
 }
