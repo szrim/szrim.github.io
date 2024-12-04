@@ -100,40 +100,7 @@ nav h1{
   letter-spacing: 1rem;
 }
 
-@media only screen and (max-width: 768px){
-  h1{
-    font-size: 2rem;
-  }
-  h2{
-    font-size: 1.5rem;
-  }
-  h3{
-    font-size: 1rem;
-  }
-  p, a{
-    font-size: 1rem;
-  }
-  main{
-    width: 85%;
-  }
-}
 
-@media only screen and (max-width: 425px){
-
-  nav h1{
-    font-size: 1rem;
-  }
-
-  .about{
-    font-size: 0.5rem;
-    padding: 0.2rem;
-  }
-  main a{
-    font-size: 0.5rem;
-    padding: 0.2rem;
-  }
-
-}
 
 nav span{
   letter-spacing: 0.4rem;
@@ -184,48 +151,45 @@ nav span{
   margin: 0.30rem 0;
 }
 
-main{
+main img{
+  max-width: 30%;
+   height:auto;
+   object-fit: cover;
+   align-self:flex-start;
+  }
+
+  
+  main p{
+    line-height: 2;
+    display: flex;
+    padding: 1.5rem;
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+    max-width: fit-content;
+    margin: auto;
+    color: #5d6d7e;
+  }
+  
+  main a{
+    display: inline;
+    color:#3498db;
+    text-decoration: none;
+    transition: color .3 ease, text-decoration .3s ease;
+  }
+
+  main {
+  background-color: #eaf2f8; /* Soft blue */
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem auto;
+  /* max-width: 100%; */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   height: auto;
   width: 70%;
   flex-wrap: nowrap;
-}
-
- main img{
-  max-width: 30%;
-  height:auto;
-  object-fit: cover;
-  align-self:flex-start;
-}
-
-
-main p{
-  line-height: 2;
-  display: flex;
-  padding: 1.5rem;
-  flex:1;
-  flex-direction: column;
-  justify-content: center;
-  max-width: fit-content;
-  margin: auto;
-  color: #5d6d7e;
-}
-
-main a{
-  display: inline;
-  color:#3498db;
-  text-decoration: none;
-  transition: color .3 ease, text-decoration .3s ease;
-}
-
-main {
-  background-color: #eaf2f8; /* Soft blue */
-  border-radius: 10px;
-  padding: 3rem;
-  margin: 2rem auto;
-  max-width: 100%;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -251,7 +215,7 @@ main {
   margin-top: 2rem;
   display: flex;
   justify-content: space-evenly;
-  padding: 1.5rem;
+  padding: 1rem 0;
 }
 
 .projects a {
@@ -285,11 +249,11 @@ main {
   display: flex;
   justify-content: space-evenly;
   overflow:hidden;
-  padding: 1.5rem;
+  padding: 1rem 0;
 }
 
 .skill{
-  font-size: 25px;
+  font-size: 1.5rem;
   text-decoration: none;
   color: rgb(108, 108, 108);
   transition: transform .3s ease;
@@ -336,3 +300,45 @@ div.contact-info{
   cursor: pointer;
   transform: scale(1.25);
 }
+
+@media only screen and (max-width: 768px){
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  h3{
+    font-size: 1rem;
+  }
+  p, a{
+    font-size: 1rem;
+  }
+  main{
+    width: 85%;
+  }
+}
+
+  @media only screen and (max-width: 426px){
+  
+    h1{
+      font-size: 1rem;
+    }
+    main{
+      width: 90%;
+      padding: 1rem;
+      margin: 1rem;
+    }
+    .about{
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+    main a{
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+    .skill{
+      font-size:1.25rem;
+    }
+  
+  }
