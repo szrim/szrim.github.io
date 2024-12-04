@@ -53,7 +53,7 @@ section{
 
 .projects {
   background-color: #f8f9fa;
-  border-radius: 10px;
+  border-radius: 1rem;
   padding: 3.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -62,15 +62,18 @@ section{
   background: linear-gradient(135deg, #3498DB, #2E86C1);
   color: white;
   padding: 3.5rem;
-  border-radius: 10px;
+  border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
 .projects, .skills{
-  margin-bottom: 50px;
   overflow: hidden;
   flex-wrap: wrap;
+}
+
+.project-items, .skill-items{
+  margin-top: 1.85rem;
 }
 
 header{
@@ -212,10 +215,9 @@ main img{
 }
 
 .project-items{
-  margin-top: 2rem;
   display: flex;
   justify-content: space-evenly;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
 }
 
 .projects a {
@@ -245,7 +247,6 @@ main img{
 }
 
 .skill-items{
-  margin-top: 25px;
   display: flex;
   justify-content: space-evenly;
   overflow:hidden;
@@ -317,12 +318,18 @@ div.contact-info{
   main{
     width: 85%;
   }
+  .bar{
+    width: 1.5rem;
+    height: 0.20rem;
+    background-color: white;
+    margin: 0.20rem 0;
+  }
 }
 
   @media only screen and (max-width: 426px){
   
     h1{
-      font-size: 1rem;
+      font-size: 1.15rem;
     }
     main{
       width: 90%;
@@ -340,5 +347,30 @@ div.contact-info{
     .skill{
       font-size:1.25rem;
     }
-  
+    .bar{
+      width: 1.1rem;
+      height: 0.15rem;
+      background-color: white;
+      margin: 0.15rem 0;
+    }
+    .skills, .projects{
+      padding: 2.5rem 3rem;
+    }
+    a.icon{
+      font-size: 0.75rem;
+    }
+    h3{
+      font-size: 0.90rem;
+    }
+  }
+
+  @media only screen and (max-width: 325px){
+    .projects, .skills{
+      padding: 2.5rem 1rem;
+    }
+
+    .project, .project-items{
+      padding: 0 1.5rem;
+      font-size: 0.80rem;
+    }
   }
