@@ -114,7 +114,7 @@ nav span{
   padding: 0.2rem;
 }
 
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content, .dropdown:active .dropdown-content{
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
@@ -142,7 +142,7 @@ nav span{
   color: black;
 }
 
-.dropdown-content a:hover{
+.dropdown-content a:hover, .dropdown-content a:focus, .dropdown-content a:active{
   background-color: #3498DB;
   color: white;
 }
@@ -196,7 +196,7 @@ main img{
 }
 
 
-.about a:hover{
+.about a:hover, .about a:focus, .about a:active{
   text-decoration: underline;
   color: #2074ac;
 }
@@ -297,7 +297,7 @@ div.contact-info{
   margin-top: 0.5rem;
 }
 
-.icon:hover{
+.icon:hover, .icon:focus, .icon:active{
   cursor: pointer;
   transform: scale(1.25);
 }
